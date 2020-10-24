@@ -29,15 +29,15 @@ export default function LabelBottomNavigation({ selected }) {
       <Toolbar />
 
       <BottomNavigation
-        style={{ position: 'fixed', bottom: 0 }}
+        style={{ position: "fixed", bottom: 0 }}
         value={value}
         onChange={handleChange}
         className={classes.root}
         showLabels
       >
         <BottomNavigationAction
-          label="Início"
-          value="listar-descontos"
+          label="Formularios"
+          value="formularios"
           icon={<HomeOutlinedIcon />}
         />
         <BottomNavigationAction
@@ -45,11 +45,6 @@ export default function LabelBottomNavigation({ selected }) {
           value="busca"
           icon={<SearchIcon />}
         />
-        {/* <BottomNavigationAction
-          label="Descontos"
-          value="meus-descontos"
-          icon={<ReceiptOutlinedIcon />}
-        /> */}
         <BottomNavigationAction
           label="Perfil"
           value="perfil"

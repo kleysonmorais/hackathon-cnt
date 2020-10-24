@@ -15,7 +15,7 @@ export default function Home() {
       <main className={{ ...styles.main }}>
         <h1 className={styles.title}>Login</h1>
         <br />
-        <Link href="/listar-descontos">
+        <Link href="/formularios">
           <Button variant="contained" color="primary" disableElevation>
             Entrar
           </Button>
