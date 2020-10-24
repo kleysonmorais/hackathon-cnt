@@ -16,7 +16,7 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function ListarDescontosPage() {
+export default function FormulariosPage() {
   return (
     <>
       <DynamicAppTabNavigationWithNoSSR />
@@ -79,7 +79,7 @@ export default function ListarDescontosPage() {
         </div>
       </div>
 
-      <DynamicLabelBottomNavigationWithNoSSR selected="listar-descontos" />
+      <DynamicLabelBottomNavigationWithNoSSR selected="formularios" />
     </>
   );
 }

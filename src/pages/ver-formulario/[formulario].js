@@ -12,7 +12,7 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function VerDescontoPage() {
+export default function VerFormularioPage() {
   return (
     <>
       <div className="bg-gray-200" style={{ height: '50vh' }}>
@@ -65,13 +65,13 @@ export default function VerDescontoPage() {
         </p>
       </div>
 
-      <Link href="/ver-voucher/[voucher].js" as={`/ver-voucher/${'abcde'}`}>
+      {/* <Link href="/ver-voucher/[voucher].js" as={`/ver-voucher/${'abcde'}`}>
         <div className="m-4 py-2 px-4 shadow-md border rounded text-center cursor-pointer">
           <h3 className="text-lg leading-6 font-medium text-gray-900">
             Gerar voucher de desconto
           </h3>
         </div>
-      </Link>
+      </Link> */}
 
       <DynamicLabelBottomNavigationWithNoSSR selected="" />
     </>
