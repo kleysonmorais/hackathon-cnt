@@ -31,7 +31,7 @@ export default function AppTab(props) {
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar className="container mx-auto">
-            <Typography variant="h6">Você está conectado</Typography>
+            <Typography variant="h6">{props.title}</Typography>
           </Toolbar>
         </AppBar>
       </ElevationScroll>

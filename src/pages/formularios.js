@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { ScrollingContainers } from 'app/UI/components/scrolling-containers';
 import { CategoryCardItem } from 'app/UI/components/category-card-item';
 import { BannerCardItem } from 'app/UI/components/banner-card-item';
-import { DiscountCardItem } from 'app/UI/components/discount-card-item';
+import { FormCardItem } from 'app/UI/components/form-card-item';
 import { GridTemplate } from 'app/UI/components/grid-template';
 
 const DynamicAppTabNavigationWithNoSSR = dynamic(
@@ -16,13 +16,60 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
+const formularios = [
+  {
+    trecho: 1,
+    id: '45841',
+    rota: 6,
+    data: '21/10/2020',
+    br: 'BR-157',
+    km: 40,
+    status: 'Completo',
+    corStatus: '#268E24',
+    color: '#fff',
+  },
+  {
+    trecho: 6,
+    id: '56234',
+    rota: 10,
+    data: '24/10/2020',
+    br: 'BR-157',
+    km: 20,
+    status: 'Pendências',
+    corStatus: '#E07B04',
+    color: '#fff',
+  },
+  {
+    trecho: 8,
+    id: '78569',
+    rota: 16,
+    data: '25/10/2020',
+    br: 'BR-157',
+    km: 40,
+    status: 'Em progresso',
+    corStatus: '#CAB923',
+    color: '#fff',
+  },
+  {
+    trecho: 8,
+    id: '78569',
+    rota: 16,
+    data: '25/10/2020',
+    br: 'BR-157',
+    km: 40,
+    status: 'Para fazer',
+    corStatus: '#fff',
+    color: '#686868',
+  },
+];
+
 export default function FormulariosPage() {
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR />
+      <DynamicAppTabNavigationWithNoSSR title={'Formulários'} />
 
       <div className="container mx-auto">
-        <div className="my-4 md:my-8">
+        {/* <div className="my-4 md:my-8">
           <ScrollingContainers>
             <CategoryCardItem />
             <CategoryCardItem />
@@ -41,41 +88,13 @@ export default function FormulariosPage() {
           </ScrollingContainers>
         </div>
 
-        <h2 className="text-xl font-medium mx-2">Eventos</h2>
-
+        <h2 className="text-xl font-medium mx-2 mt-8">Parceiros</h2> */}
         <div className="my-4">
-          <ScrollingContainers>
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-          </ScrollingContainers>
-        </div>
-
-        <h2 className="text-xl font-medium mx-2 mt-8">Parceiros</h2>
-
-        <div className="my-4">
-          <GridTemplate>
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
-            <DiscountCardItem />
+          <GridTemplate mobileCols="1" desktopCols="1">
+            {formularios.map((element, index) => {
+              return <FormCardItem key={`form ${index}`} item={element} />;
+            })}
           </GridTemplate>
-
-          <div className="px-2">
-            <button
-              type="button"
-              className="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold 
-              hover:text-white py-2 px-4 border border-gray-700 hover:border-transparent 
-              rounded w-full  my-8"
-            >
-              Ver mais parceiros
-            </button>
-          </div>
         </div>
       </div>
 
