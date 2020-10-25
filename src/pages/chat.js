@@ -16,8 +16,7 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
 
 const mensagensBot = [
   { message: 'Olá, no que posso ajudar?', type: 'BOT' },
-  { message: 'Não pode, precisa ir até o fim', type: 'BOT' },
-  { message: 'Pare, descanse e respire', type: 'BOT' },
+  { message: 'Lembre que todo ponto critico precisa de uma fot', type: 'BOT' },
   { message: 'Por nada, precisando é só chamar', type: 'BOT' },
   { message: 'Olá, no que posso ajudar?', type: 'BOT' },
 ];
