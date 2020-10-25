@@ -172,7 +172,7 @@ export default function VerFormularioPage() {
   return (
     <>
       <DynamicAppTabNavigationWithNoSSR
-        title={'Formulário #48573 - Trecho 1'}
+        title={'Formulário #78569 - Trecho 8'}
         return="/formularios"
       />
       <SimpleCard />
@@ -187,6 +187,60 @@ export default function VerFormularioPage() {
                   className="w-8 h-8 mr-2"
                 />
                 Km 10
+              </div>
+              <NavigateNextOutlinedIcon fontSize="large" />
+            </div>
+          </Card>
+        </div>
+      </Link>
+
+      <Link href="/trecho-km/[km].js" as={`/trecho-km/20`}>
+        <div className="px-4 py-2">
+          <Card className={classes.root}>
+            <div className="p-2 flex justify-between">
+              <div className="text-lg flex justify-start">
+                <img
+                  src="../icons/location.svg"
+                  alt="icon"
+                  className="w-8 h-8 mr-2"
+                />
+                Km 20
+              </div>
+              <NavigateNextOutlinedIcon fontSize="large" />
+            </div>
+          </Card>
+        </div>
+      </Link>
+
+      <Link href="/trecho-km/[km].js" as={`/trecho-km/30`}>
+        <div className="px-4 py-2">
+          <Card className={classes.root}>
+            <div className="p-2 flex justify-between">
+              <div className="text-lg flex justify-start">
+                <img
+                  src="../icons/location.svg"
+                  alt="icon"
+                  className="w-8 h-8 mr-2"
+                />
+                Km 30
+              </div>
+              <NavigateNextOutlinedIcon fontSize="large" />
+            </div>
+          </Card>
+        </div>
+      </Link>
+
+      <Link href="/trecho-km/[km].js" as={`/trecho-km/40`}>
+        <div className="px-4 py-2">
+          <Card className={classes.root}>
+            <div className="p-2 flex justify-between">
+              <div className="text-lg flex justify-start">
+                <img
+                  src="../icons/location.svg"
+                  alt="icon"
+                  className="w-8 h-8 mr-2"
+                />
+                Km 40
               </div>
               <NavigateNextOutlinedIcon fontSize="large" />
             </div>

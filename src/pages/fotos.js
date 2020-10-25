@@ -15,8 +15,8 @@ export default function DuvidasPage() {
   return (
     <>
       <DynamicAppTabNavigationWithNoSSR
-        title="Trecho 1 - Fotos"
-        return="/ver-formulario/48573"
+        title="Trecho 8 - Fotos"
+        return="/ver-formulario/78569"
       />
 
       <img src="../imgs/foto1.png" alt="foto" />
