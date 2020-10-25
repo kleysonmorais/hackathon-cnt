@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Link from 'next/link';
 import Card from '@material-ui/core/Card';
 import MoneyOffIcon from '@material-ui/icons/MoneyOff';
 import styled from 'styled-components';
@@ -172,23 +173,27 @@ export default function VerFormularioPage() {
     <>
       <DynamicAppTabNavigationWithNoSSR
         title={'Formulário #48573 - Trecho 1'}
+        return="/formularios"
       />
       <SimpleCard />
-      <div className="px-4 py-2">
-        <Card className={classes.root}>
-          <div className="p-2 flex justify-between">
-            <div className="text-lg flex justify-start">
-              <img
-                src="../icons/location.svg"
-                alt="icon"
-                className="w-8 h-8 mr-2"
-              />
-              Km 10
+      <Link href="/trecho-km/[km].js" as={`/trecho-km/10`}>
+        <div className="px-4 py-2">
+          <Card className={classes.root}>
+            <div className="p-2 flex justify-between">
+              <div className="text-lg flex justify-start">
+                <img
+                  src="../icons/location.svg"
+                  alt="icon"
+                  className="w-8 h-8 mr-2"
+                />
+                Km 10
+              </div>
+              <NavigateNextOutlinedIcon fontSize="large" />
             </div>
-            <NavigateNextOutlinedIcon fontSize="large" />
-          </div>
-        </Card>
-      </div>
+          </Card>
+        </div>
+      </Link>
+
       <div className="px-4 py-2">
         <Card className={classes.root}>
           <div className="p-2 flex justify-between">
@@ -204,6 +209,7 @@ export default function VerFormularioPage() {
           </div>
         </Card>
       </div>
+
       <div className="px-4 py-2">
         <Card className={classes.root}>
           <div className="p-2 flex justify-between">
@@ -219,21 +225,23 @@ export default function VerFormularioPage() {
           </div>
         </Card>
       </div>
-      <div className="px-4 py-2">
-        <Card className={classes.root}>
-          <div className="p-2 flex justify-between">
-            <div className="text-lg flex justify-start">
-              <img
-                src="../icons/add_a_photo.svg"
-                alt="icon"
-                className="w-8 h-8 mr-2"
-              />
-              Fotos
+      <Link href="/fotos">
+        <div className="px-4 py-2">
+          <Card className={classes.root}>
+            <div className="p-2 flex justify-between">
+              <div className="text-lg flex justify-start">
+                <img
+                  src="../icons/add_a_photo.svg"
+                  alt="icon"
+                  className="w-8 h-8 mr-2"
+                />
+                Fotos
+              </div>
+              <NavigateNextOutlinedIcon fontSize="large" />
             </div>
-            <NavigateNextOutlinedIcon fontSize="large" />
-          </div>
-        </Card>
-      </div>
+          </Card>
+        </div>
+      </Link>
       <div className="px-4 py-2">
         <Card className={classes.root}>
           <div className="p-2 flex justify-between">

@@ -11,15 +11,18 @@ const DynamicLabelBottomNavigationWithNoSSR = dynamic(
   { ssr: false }
 );
 
-export default function PerfilPage() {
+export default function DuvidasPage() {
   return (
     <>
-      <DynamicAppTabNavigationWithNoSSR title="Perfil" />
+      <DynamicAppTabNavigationWithNoSSR
+        title="Trecho 1 - Fotos"
+        return="/ver-formulario/48573"
+      />
 
-      <img src="../imgs/Group-109.png" alt="foto" />
-      <img src="../imgs/Group-110.png" alt="foto" />
+      <img src="../imgs/foto1.png" alt="foto" />
+      <img src="../imgs/foto2-2.png" alt="foto" />
 
-      <DynamicLabelBottomNavigationWithNoSSR selected="perfil" />
+      <DynamicLabelBottomNavigationWithNoSSR selected="busca" />
     </>
   );
 }
