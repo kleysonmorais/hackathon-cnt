@@ -1,30 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+ <img width="50%" alt="logo-cnt" src="https://user-images.githubusercontent.com/17303936/156004588-545d4b67-81a4-426e-9dfb-9e4cbbf4a0aa.png">
+</p>
 
-## Getting Started
+Big Data CNT: a solução consiste em uma plataforma de informações em tempo real que favorece a tomada de decisões para todo o setor de transporte. A proposta contempla três fases de entregas. A primeira está focada em melhorar a execução da pesquisa por meio de um aplicativo, de um sistema de gestão da pesquisa e da sincronização de dados em nuvem. A segunda contempla conexão com dados externos, para construção de um big data. A terceira volta-se à geração de valor por meio do tratamento de dados, apoiando a tomada de decisão.
 
-First, run the development server:
+![image](https://user-images.githubusercontent.com/17303936/156004799-761d69ff-22a6-4a50-86a2-78b582b1e3ac.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+# Desafio
+[Hackathon CNT](https://cnt.org.br/agencia-cnt/divulgados-vencedores-do-hackathon-do-transporte-cnt/). Identificar as melhores soluções para tornar mais automatizados, ágeis e eficientes os processos de coleta, armazenagem, transmissão, processamento e consumo dos dados levantados em campo pela Pesquisa CNT de Rodovias.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Participantes
+[Felipe Reis](https://www.linkedin.com/in/felipereismb/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+[Kleyson Morais](https://www.linkedin.com/in/kleysonmorais/)
 
-## Learn More
+[Lorraine Patiele](https://www.linkedin.com/in/lorraine-patiele/)
 
-To learn more about Next.js, take a look at the following resources:
+[Paulo Atavila](https://www.linkedin.com/in/pauloatavila/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Links
+[Vídeo Pitch](https://youtu.be/ofEGKclh7oA)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Vídeo Demo](https://youtu.be/4Hqw93OS0ss)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Scripts
+Este projeto foi feito com [Next.js](https://nextjs.org/) inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `yarn install`
+
+Instala todas as dependências necessárias para execurar o projeto.
+
+### `yarn dev ou npm run dev`
+
+Executa o projeto em modo de desenvolvimento
+Abra [http://localhost:3000](http://localhost:3000) para ver a execução no browser.
